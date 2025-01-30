@@ -2,6 +2,8 @@ set clipboard+=unnamedplus
 set multiple-cursors
 set surround
 
+let mapleader = " "
+
 " Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
@@ -17,3 +19,4 @@ nmap <leader><C-n> <Plug>AllWholeOccurrences
 xmap <leader><C-n> <Plug>AllWholeOccurrences
 nmap <leader>g<C-n> <Plug>AllOccurrences
 xmap <leader>g<C-n> <Plug>AllOccurrences
+nmap <leader>sf <action>(GotoFile)
