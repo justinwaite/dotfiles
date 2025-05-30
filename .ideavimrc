@@ -8,6 +8,8 @@ set smartcase
 set hlsearch
 set incsearch
 
+let mapleader = " "
+
 " Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
 nmap <C-n> <Plug>NextWholeOccurrence
 xmap <C-n> <Plug>NextWholeOccurrence
