@@ -7,8 +7,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set incsearch
-
-let mapleader = " "
+set highlightedyank
 
 " Remap multiple-cursors shortcuts to match terryma/vim-multiple-cursors
 nmap <C-n> <Plug>NextWholeOccurrence
@@ -29,3 +28,15 @@ xmap <leader>g<C-n> <Plug>AllOccurrences
 " My custom keymaps
 nmap <leader>sf <action>(GotoFile)
 imap <C-y> :action EditorChooseLookupItem<CR>
+nmap <leader>f <action>(ReformatWithPrettierAction)
+nmap <leader>sg <action>(FindInPath)
+nmap <leader>db <action>(ToggleLineBreakpoint)
+nmap <leader>ca <action>(ShowIntentionActions)
+nmap - <action>(SelectIn)
+nmap K <action>(ShowHoverInfo)
+xmap gcc <action>(CommentByLineComment)
+nmap gcc <action>(CommentByLineComment)
+nmap <leader>rn <action>(RenameElement)
+nmap <leader>rm <action>(Move)
+nmap <leader>db <action>(ToggleLineBreakpoint)
+nmap <leader>dr <action>(Resume)
